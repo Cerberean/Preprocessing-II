@@ -18,10 +18,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-          @media(max-width:500px){
+          // @media(max-width:500px){
             
-            flex-direction: column;
-          }
+          //   flex-direction: column;
+          // }
       }
       
       .text-content {
@@ -60,13 +60,12 @@
 .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    border: 3px solid black;
-
+    display: flex;
 
     @media(max-width: 500px){
       display: flex;
       flex-direction: column-reverse;
-      border: 1px solid red;
+
     }
 
     .text-content {
