@@ -136,6 +136,15 @@ header {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+header div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div nav {
+  justify-content: space-between;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -186,19 +195,6 @@ hr.style-three {
   text-decoration: none;
   font-size: 1.6rem;
 }
-@media (max-width: 500px) {
-  .content-section {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .content-section div h2,
-  .content-section div p,
-  .content-section div img {
-    width: 100%;
-  }
-}
 header {
   width: 90%;
   display: flex;
@@ -213,10 +209,15 @@ header {
     display: flex;
     flex-direction: column;
   }
-  header nav {
+  header div {
     width: 100%;
+    flex-direction: column;
+    padding: 3% 0;
+  }
+  header div nav {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 header h1 {
@@ -260,6 +261,16 @@ header nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 1px solid black;
+}
+.home .content-section div {
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .home .content-section div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .content-section .text-content {
   width: 48%;

@@ -18,9 +18,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    border: 1px solid black;
+
+    div{
+      border: 1px solid black;
+      @media(max-width:500px){
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
     }
 
     .img-content {

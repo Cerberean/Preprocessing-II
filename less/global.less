@@ -11,6 +11,16 @@ html {
 header{
   margin-top: 2%;
   margin-bottom: 2%;
+  div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+      justify-content: space-between;
+    }
+  }
 }
 
 html, body {
@@ -75,18 +85,4 @@ hr.style-three {
   text-align: center;
   text-decoration: none;
   font-size: 1.6rem;
-}
-
-.content-section{
-    @media(max-width:500px){
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        div{
-          h2, p, img{
-            width: 100%;
-          }
-        }
-    }
 }
