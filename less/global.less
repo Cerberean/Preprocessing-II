@@ -2,8 +2,25 @@
   box-sizing: border-box;
 }
 
+@mobile:~'(max-width:500px)';
+
 html {
   font-size: 62.5%;
+}
+
+header{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+      justify-content: space-between;
+    }
+  }
 }
 
 html, body {
@@ -43,4 +60,29 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+hr.style-three {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+// .destination{
+//   align-items: center;
+//   @media(max-width:500px){
+//     border: 1px solid black;
+//     width: 100%;
+//     align-self: stretch;
+//   }
+// }
+
+.btn{
+  background-color: teal;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
 }
